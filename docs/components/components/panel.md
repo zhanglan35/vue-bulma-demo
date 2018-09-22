@@ -1,0 +1,5 @@
+---
+sidebarDepth
+---
+
+# Panel (todo)
