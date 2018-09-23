@@ -1,16 +1,20 @@
 <template>
-  <Columns style="position: absolute; left: 0; width: 100%; padding-left: 2rem; padding-right: 2rem">
+  <div class="code-tester">
+    <h1 class="title is-4">
+      Code
+    </h1>
+  <Columns>
     <Column narrow>
       <Field style="min-width: 500px">
         <Control>
-          <textarea v-model="code" class="textarea" rows="20"/>
+          <textarea v-model="code" class="textarea" rows="20" style="white-space: nowrap"/>
         </Control>
       </Field>
 
       <Field>
         <Control>
           <Button @click="handleClick" color="primary">
-            在线运行
+            Run
           </Button>
         </Control>
       </Field>
@@ -24,6 +28,7 @@
       </Field>
     </Column>
   </Columns>
+  </div>
 </template>
 
 <script>
@@ -49,3 +54,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.code-tester {
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 3rem;
+}
+</style>
+
