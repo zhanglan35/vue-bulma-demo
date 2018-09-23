@@ -12,6 +12,7 @@ module.exports = {
     nav: [
       { text: '指南', link: '/guide/' },
       { text: '组件', link: '/components/layout/columns' },
+      { text: '在线调试', link: '/online/' }
     ],
     sidebar: [
       {
